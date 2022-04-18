@@ -1,2 +1,3 @@
-http://example.com/2022/04/18/hello-world/
+http://example.com/categories/index.html
+http://example.com/2022/04/18/RSA/
 http://example.com/

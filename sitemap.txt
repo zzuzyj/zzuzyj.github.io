@@ -8,7 +8,7 @@ http://example.com/books/index.html
 http://example.com/about/index.html
 http://example.com/404.html
 http://example.com/
-http://example.com/tags/numpy/
 http://example.com/tags/RSA/
-http://example.com/categories/python/
+http://example.com/tags/numpy/
 http://example.com/categories/Crypto/
+http://example.com/categories/python/

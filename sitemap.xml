@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2022/04/20/numpylearn/</loc>
+    
+    <lastmod>2022-04-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2022/04/18/RSA/</loc>
     
     <lastmod>2022-04-19</lastmod>
@@ -76,15 +85,22 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2022-04-19</lastmod>
+    <lastmod>2022-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>http://example.com/tags/numpy/</loc>
+    <lastmod>2022-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/RSA/</loc>
-    <lastmod>2022-04-19</lastmod>
+    <lastmod>2022-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -92,8 +108,15 @@
 
   
   <url>
+    <loc>http://example.com/categories/python/</loc>
+    <lastmod>2022-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/categories/Crypto/</loc>
-    <lastmod>2022-04-19</lastmod>
+    <lastmod>2022-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

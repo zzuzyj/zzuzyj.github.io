@@ -17,18 +17,16 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Repositories | Hexo</title>
+  <title>分类: python | Hexo</title>
   <meta property="og:type" content="website">
-<meta property="og:title" content="Repositories">
-<meta property="og:url" content="http://example.com/repository/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/categories/python/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-18T11:52:10.737Z">
-<meta property="article:modified_time" content="2022-04-18T11:52:10.737Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/repository/index.html">
+  <link rel="canonical" href="http://example.com/categories/python/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -45,7 +43,7 @@
 <meta name="generator" content="Hexo 6.1.0"></head>
 
 
-<body class="main-center theme-black no-sidebar" itemscope itemtype="http://schema.org/WebPage">
+<body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage">
   <header class="header" itemscope itemtype="http://schema.org/WPHeader">
   <div class="slimContent">
     <div class="navbar-header">
@@ -292,47 +290,52 @@
 
   
   <main class="main" role="main">
-  <article class="article article-repository article-type-list" itemscope="">
-  <header class="article-header">
-    <h1 itemprop="title">Repositories</h1>
-    <p class="text-muted">I have <span id="repo-count">0</span> projects on <span id="repo-platform">Github</span></p>
-  </header>
-  <div class="article-body">
-    <div class="repo-content">
-      <div class="blankslate">
-        <p>正在加载...</p>
-      </div>
+  <article class="content article article-categories article-type-list" itemscope="">
+    <header class="article-header">
+      <h1 itemprop="name" class="hidden-xs">分类: python</h1>
+      <p class="hidden-xs">共 1 篇文章</p>
+      <nav role="navigation" id="nav-main" class="okayNav">
+        <ul>
+          <li><a href="/categories">All</a></li>
+          
+          <li><a href="/categories/python/">python</a></li>
+          
+          <li><a href="/categories/Crypto/">Crypto</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <!-- /header -->
+    <div class="article-body">
+      <div class="panel panel-default b-no">
+    <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" href="#collapsepython" aria-expanded="true">
+              <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>
+              python
+            </a>
+            <small class="text-muted">(Total 1 articles)</small>
+        </h4>
     </div>
-  </div>
-</article>
+    <div id="collapsepython" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingpython">
+        <div class="panel-body">
+            <div class="collection">
+              
+                
+<a href="/2022/04/20/numpylearn/" class="collection-item"   itemprop="url">
+  <time datetime="2022-04-20T12:34:41.641Z" itemprop="datePublished">2022-04-20</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> numpylearn
+</a>
 
 
-  
-
-
-
-<!--项模版-->
-<script type="text/template" id="list-template">
-  <li class="col-sm-6 col-md-6 col-lg-4">
-    <div class="repo hover-shadow hover-grow">
-      <div class="repo-image geopattern" data-pattern-id="{%=name%}"></div>
-      <h3 class="repo-title"><a href="{%=clone_url%}" target="_blank" rel="external nofollow noopener noreferrer">{%=full_name%}</a></h3>
-      <p class="repo-body">{%=description%}</p>
-      <div class="repo-meta">
-        <span class="meta meta-type pull-left" aria-label="{%=language%} project">{%=language%}</span>
-        <span class="meta meta-star" aria-label="{%=stargazers_count%} stars"><i class="icon icon-star-fill"></i> {%=stargazers_count%}</span>
-        <span class="meta meta-fork" aria-label="{%=forks_count%} forks"><i class="icon icon-code-fork"></i> {%=forks_count%}</span>
-        <span class="meta meta-last-updated" aria-label="最后更新时间：{%=updated_at%}">
-        <i class="icon icon-clock"></i> <time datetime="{%=updated_at%}">{%=updated_at%}</time></span>
-      </div>
+              
+            </div>
+        </div>
     </div>
-  </li>
-</script>
-
-<!--获取失败模版-->
-<script type="text/template" id="error-template">
-  <h3>加载失败</h3><p>请刷新或稍后再试...</p>
-</script>
+</div>
+    </div>
+  </article>
+   
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -384,72 +387,6 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <script src="/js/insight.js"></script>
 
 
-
-
-   
-  
-    
-  <script type="text/javascript">
-    var open = function () {
-      var baiduTpl = new Object();
-      var handleTpl = function () {
-        baiduTpl.list = baidu.template("list-template");
-        baiduTpl.error = baidu.template("error-template");
-      };
-
-      var handleRepo = function () {
-        var repoContainer = $('.repo-content');
-        var errorContainer = repoContainer.find(".blankslate");
-        var countContainer = $("#repo-count");
-        var platformContainer = $("#repo-platform");
-
-        platformContainer.text("Github");
-
-        url = "https://api.github.com/users/zzuzyj/repos";
-
-        $.get(url, function (result) {
-          if (result) {
-            errorContainer.remove();
-            countContainer.text(result.length);
-            var ul = $("<ul class='repo-list row clearfix'></ul>");
-            result.sort(function (a, b) {
-              return new Date(b.updated_at) - new Date(a.updated_at);
-            }).sort(function (a, b) {
-              var a_start = a.stargazers_count;
-              var b_start = b.stargazers_count;
-              if (a.fork) a_start * 0.5;
-              if (b.fork) b_start * 0.5;
-              return b_start - a_start;
-            }).map(function (repo) {
-              if (!repo.description) {
-                repo.description = "";
-              }
-              repo.updated_at = repo.updated_at.substring(0, repo.updated_at.lastIndexOf("T"));
-              var html = baiduTpl.list(repo);
-              ul.append(html);
-            });
-
-            repoContainer.append(ul);
-            $(".geopattern").each(function () {
-              $(this).geopattern($(this).data('pattern-id'));
-            });
-          } else {
-            errorContainer.append(baiduTpl.error());
-          }
-        });
-      };
-
-      return {
-        init: function () {
-          handleTpl();
-          handleRepo();
-        }
-      }
-    };
-    $(open().init);
-  </script>
-
-  
 
 
 

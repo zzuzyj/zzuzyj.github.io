@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://zzuzyj.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://zzuzyj.github.io/"/>
   <updated>2022-04-20T13:28:06.337Z</updated>
-  <id>http://example.com/</id>
+  <id>http://zzuzyj.github.io/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>numpylearn</title>
-    <link href="http://example.com/2022/04/20/numpylearn/"/>
-    <id>http://example.com/2022/04/20/numpylearn/</id>
+    <link href="http://zzuzyj.github.io/2022/04/20/numpylearn/"/>
+    <id>http://zzuzyj.github.io/2022/04/20/numpylearn/</id>
     <published>2022-04-20T12:34:41.641Z</published>
     <updated>2022-04-20T13:28:06.337Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="numpy"><a href="#numpy" class="headerlink" title="numpy"></a>numpy</h1><h2 id="初识数组"><a href="#初识数组" class="headerlink" title="初识数组"></a>初识数组</h2><h3 id="array"><a href="#array" class="headerlink" title="array()"></a>array()</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">ls=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>]</span><br><span class="line">a=np.array(ls)</span><br><span class="line"><span class="built_in">print</span>(a)</span><br><span class="line"><span class="comment"># [1 2 3 4 5 6 7 8]</span></span><br></pre></td></tr></table></figure><h2 id="认识类型"><a href="#认识类型" class="headerlink" title="认识类型"></a>认识类型</h2><h3 id="dtype"><a href="#dtype" class="headerlink" title="dtype"></a>dtype</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span></span><br><span class="line">a =np.array([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],dtype=np.<span class="built_in">bool</span>)</span><br><span class="line">b =np.array([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],dtype=np.int8)</span><br><span class="line">c =np.array([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],dtype=np.uint8)</span><br><span class="line">d =np.array([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],dtype=np.float16)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(a,a.dtype)</span><br><span class="line"><span class="built_in">print</span>(b,b.dtype)</span><br><span class="line"><span class="built_in">print</span>(c,c.dtype)</span><br><span class="line"><span class="built_in">print</span>(d,d.dtype) </span><br><span class="line"><span class="comment">#[False  True  True  True  True  True  True  True  True  True] bool</span></span><br><span class="line"><span class="comment">#[0 1 2 3 4 5 6 7 8 9] int8</span></span><br><span class="line"><span class="comment">#[0 1 2 3 4 5 6 7 8 9] uint8</span></span><br><span class="line"><span class="comment">#[0. 1. 2. 3. 4. 5. 6. 7. 8. 9.] float16</span></span><br></pre></td></tr></table></figure><h2 id="查询属性"><a href="#查询属性" class="headerlink" title="查询属性"></a>查询属性</h2><p><img src="http://example.com/2022/04/20/numpylearn/1650459866111.png" alt="1650459866111"></p><div class="table-container"><table><thead><tr><th>属性</th><th>说明</th></tr></thead><tbody><tr><td>.dtype</td><td>数组元素的数据类型</td></tr><tr><td>.ndim</td><td>数组的维度的个数</td></tr><tr><td>.shape</td><td>数组的形状</td></tr><tr><td>.size</td><td>数组元素的总数</td></tr><tr><td>.itemsize</td><td>数组中的每个元素的字节大小</td></tr></tbody></table></div>]]></content>
+    <content type="html"><![CDATA[<h1 id="numpy"><a href="#numpy" class="headerlink" title="numpy"></a>numpy</h1><h2 id="初识数组"><a href="#初识数组" class="headerlink" title="初识数组"></a>初识数组</h2><h3 id="array"><a href="#array" class="headerlink" title="array()"></a>array()</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">ls=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>]</span><br><span class="line">a=np.array(ls)</span><br><span class="line"><span class="built_in">print</span>(a)</span><br><span class="line"><span class="comment"># [1 2 3 4 5 6 7 8]</span></span><br></pre></td></tr></table></figure><h2 id="认识类型"><a href="#认识类型" class="headerlink" title="认识类型"></a>认识类型</h2><h3 id="dtype"><a href="#dtype" class="headerlink" title="dtype"></a>dtype</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span></span><br><span class="line">a =np.array([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],dtype=np.<span class="built_in">bool</span>)</span><br><span class="line">b =np.array([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],dtype=np.int8)</span><br><span class="line">c =np.array([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],dtype=np.uint8)</span><br><span class="line">d =np.array([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],dtype=np.float16)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(a,a.dtype)</span><br><span class="line"><span class="built_in">print</span>(b,b.dtype)</span><br><span class="line"><span class="built_in">print</span>(c,c.dtype)</span><br><span class="line"><span class="built_in">print</span>(d,d.dtype) </span><br><span class="line"><span class="comment">#[False  True  True  True  True  True  True  True  True  True] bool</span></span><br><span class="line"><span class="comment">#[0 1 2 3 4 5 6 7 8 9] int8</span></span><br><span class="line"><span class="comment">#[0 1 2 3 4 5 6 7 8 9] uint8</span></span><br><span class="line"><span class="comment">#[0. 1. 2. 3. 4. 5. 6. 7. 8. 9.] float16</span></span><br></pre></td></tr></table></figure><h2 id="查询属性"><a href="#查询属性" class="headerlink" title="查询属性"></a>查询属性</h2><p><img src="http://zzuzyj.github.io/2022/04/20/numpylearn/1650459866111.png" alt="1650459866111"></p><div class="table-container"><table><thead><tr><th>属性</th><th>说明</th></tr></thead><tbody><tr><td>.dtype</td><td>数组元素的数据类型</td></tr><tr><td>.ndim</td><td>数组的维度的个数</td></tr><tr><td>.shape</td><td>数组的形状</td></tr><tr><td>.size</td><td>数组元素的总数</td></tr><tr><td>.itemsize</td><td>数组中的每个元素的字节大小</td></tr></tbody></table></div>]]></content>
     
     
       
@@ -33,17 +33,17 @@
     
     
     
-    <category term="python" scheme="http://example.com/categories/python/"/>
+    <category term="python" scheme="http://zzuzyj.github.io/categories/python/"/>
     
     
-    <category term="numpy" scheme="http://example.com/tags/numpy/"/>
+    <category term="numpy" scheme="http://zzuzyj.github.io/tags/numpy/"/>
     
   </entry>
   
   <entry>
     <title>RSA攻击</title>
-    <link href="http://example.com/2022/04/18/RSA/"/>
-    <id>http://example.com/2022/04/18/RSA/</id>
+    <link href="http://zzuzyj.github.io/2022/04/18/RSA/"/>
+    <id>http://zzuzyj.github.io/2022/04/18/RSA/</id>
     <published>2022-04-18T12:29:33.706Z</published>
     <updated>2022-04-19T03:01:04.826Z</updated>
     
@@ -58,10 +58,10 @@
     
     
     
-    <category term="Crypto" scheme="http://example.com/categories/Crypto/"/>
+    <category term="Crypto" scheme="http://zzuzyj.github.io/categories/Crypto/"/>
     
     
-    <category term="RSA" scheme="http://example.com/tags/RSA/"/>
+    <category term="RSA" scheme="http://zzuzyj.github.io/tags/RSA/"/>
     
   </entry>
   

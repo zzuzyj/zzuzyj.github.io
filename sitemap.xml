@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>http://zzuzyj.github.io/links/index.html</loc>
+    <loc>http://zzuzyj.github.io/categories/index.html</loc>
     
     <lastmod>2022-04-18</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>http://zzuzyj.github.io/categories/index.html</loc>
+    <loc>http://zzuzyj.github.io/links/index.html</loc>
     
     <lastmod>2022-04-18</lastmod>
     
@@ -149,20 +149,6 @@
   </url>
   
   <url>
-    <loc>http://zzuzyj.github.io/tags/st%E8%A1%A8/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://zzuzyj.github.io/tags/%E5%80%8D%E5%A2%9E/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://zzuzyj.github.io/tags/web/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -178,6 +164,20 @@
   
   <url>
     <loc>http://zzuzyj.github.io/tags/ctfshow/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://zzuzyj.github.io/tags/st%E8%A1%A8/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://zzuzyj.github.io/tags/%E5%80%8D%E5%A2%9E/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -207,14 +207,14 @@
   </url>
   
   <url>
-    <loc>http://zzuzyj.github.io/categories/algorithm/</loc>
+    <loc>http://zzuzyj.github.io/categories/web/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://zzuzyj.github.io/categories/web/</loc>
+    <loc>http://zzuzyj.github.io/categories/algorithm/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

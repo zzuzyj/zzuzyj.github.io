@@ -6,8 +6,8 @@ http://zzuzyj.github.io/2022/04/22/CTF_EZrsa/
 http://zzuzyj.github.io/2022/04/18/RSA/
 http://zzuzyj.github.io/tags/index.html
 http://zzuzyj.github.io/repository/index.html
-http://zzuzyj.github.io/categories/index.html
 http://zzuzyj.github.io/links/index.html
+http://zzuzyj.github.io/categories/index.html
 http://zzuzyj.github.io/books/index.html
 http://zzuzyj.github.io/about/index.html
 http://zzuzyj.github.io/404.html

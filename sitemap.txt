@@ -1,3 +1,4 @@
+http://zzuzyj.github.io/2022/04/21/web21-28/
 http://zzuzyj.github.io/2022/04/24/CF1632/
 http://zzuzyj.github.io/2022/04/24/st%E8%A1%A8/
 http://zzuzyj.github.io/2022/04/22/CF1669(Div_4)/
@@ -17,8 +18,12 @@ http://zzuzyj.github.io/tags/RSA/
 http://zzuzyj.github.io/tags/numpy/
 http://zzuzyj.github.io/tags/st%E8%A1%A8/
 http://zzuzyj.github.io/tags/%E5%80%8D%E5%A2%9E/
+http://zzuzyj.github.io/tags/web/
+http://zzuzyj.github.io/tags/%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4/
+http://zzuzyj.github.io/tags/ctfshow/
 http://zzuzyj.github.io/categories/acm/
 http://zzuzyj.github.io/categories/Crypto/
 http://zzuzyj.github.io/categories/python/
 http://zzuzyj.github.io/categories/algorithm/
+http://zzuzyj.github.io/categories/web/
 http://zzuzyj.github.io/categories/algorithm/%E6%A8%A1%E6%9D%BF/

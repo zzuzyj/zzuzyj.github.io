@@ -6,7 +6,7 @@
   <link href="http://zzuzyj.github.io/atom.xml" rel="self"/>
   
   <link href="http://zzuzyj.github.io/"/>
-  <updated>2022-04-24T13:12:08.000Z</updated>
+  <updated>2022-05-03T12:08:12.724Z</updated>
   <id>http://zzuzyj.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>乘法逆元</title>
+    <link href="http://zzuzyj.github.io/2022/05/03/%E4%B9%98%E6%B3%95%E9%80%86%E5%85%83/"/>
+    <id>http://zzuzyj.github.io/2022/05/03/%E4%B9%98%E6%B3%95%E9%80%86%E5%85%83/</id>
+    <published>2022-05-03T09:23:29.923Z</published>
+    <updated>2022-05-03T12:08:12.724Z</updated>
+    
+    <content type="html"><![CDATA[<!-- toc --><ul><li><a href="#乘法逆元介绍">乘法逆元介绍</a></li><li><a href="#求逆元的方法">求逆元的方法</a><ul><li><a href="#1-费马小定理快速幂">1 费马小定理+快速幂</a><ul><li><a href="#快速幂写法">快速幂写法</a></li><li><a href="#逆元求法">逆元求法</a></li><li><a href="#注意事项">注意事项</a></li></ul></li><li><a href="#2-拓展欧几里得">2 拓展欧几里得</a><ul><li><a href="#求解拓展欧几里得">求解拓展欧几里得</a></li><li><a href="#求解逆元">求解逆元</a></li></ul></li><li><a href="#3-线性求逆元">3 线性求逆元</a><ul><li><a href="#情况1">情况1</a></li><li><a href="#情况2">情况2</a></li></ul></li></ul></li></ul><!-- tocstop --><h1><span id="乘法逆元介绍">乘法逆元介绍</span></h1><script type="math/tex; mode=display">如果一个线性同余方程 ax \equiv 1\pmod{n}，则 x 称为 a 的逆元，记作a^{-1} 。</script><h1><span id="求逆元的方法">求逆元的方法</span></h1><h2><span id="1-费马小定理快速幂">1 费马小定理+快速幂</span></h2><script type="math/tex; mode=display">\because a*x\equiv 1 \pmod n\\\therefore a*x\equiv a^{n-1}\pmod n\\\therefore x=a^{n-2}\pmod n</script><h3><span id="快速幂写法">快速幂写法</span></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ll <span class="title">fastmi</span><span class="params">(ll a,ll b,ll mod)</span></span>&#123;</span><br><span class="line">    ll ans;</span><br><span class="line">    <span class="keyword">while</span>(b)&#123;</span><br><span class="line">        <span class="keyword">if</span>(b&amp;<span class="number">1</span>)ans=ans*a%mod;</span><br><span class="line">        b&gt;&gt;=<span class="number">1</span>;a=a*a%mod;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3><span id="逆元求法">逆元求法</span></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ll <span class="title">invert</span><span class="params">(ll a,ll p)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">fastmi</span>(a,p<span class="number">-2</span>,p);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3><span id="注意事项">注意事项</span></h3><p>由于费马小定理中的模数是一个质数，所以说这种利用快速幂求解逆元的方法只能用在模数是质数的情况下。</p><h2><span id="2-拓展欧几里得">2 拓展欧几里得</span></h2><p>拓展欧几里得</p><script type="math/tex; mode=display">a*x+b*y=1\\而我们求逆元时，a*x\equiv 1 \pmod b=>a*x\equiv 1+n*y\\由此可见逆元x不就是拓展欧几里得方程的一个正解吗</script><h3><span id="求解拓展欧几里得">求解拓展欧几里得</span></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">exgcd</span><span class="params">(ll a,ll b,ll&amp;x,ll&amp;y)</span></span>&#123;</span><br><span class="line">   <span class="keyword">if</span> (b == <span class="number">0</span>) &#123;</span><br><span class="line">    x = <span class="number">1</span>, y = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">exgcd</span>(b, a % b, y, x);</span><br><span class="line">  y -= a / b * x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3><span id="求解逆元">求解逆元</span></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ll <span class="title">invert</span><span class="params">(ll a,ll p)</span></span>&#123;</span><br><span class="line">   ll x,y;</span><br><span class="line">   <span class="built_in">exgcd</span>(a,p,x,y);</span><br><span class="line">   <span class="keyword">return</span> (x+x%p)%p;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2><span id="3-线性求逆元">3 线性求逆元</span></h2><h3><span id="情况1">情况1</span></h3><p>求1-n关于p的逆元</p><h4><span id="分析">分析</span></h4><p>求解一些数字对于同一个数的逆元（大概率是质数，不然和很可能没有逆元纯在）</p><p>依次单个求解会非常的慢，这里我们学习一下线性求解逆元的方法</p><p>首先乘法逆元中1的逆元是自己</p><script type="math/tex; mode=display">1^{-1}\equiv1 \pmod p</script><script type="math/tex; mode=display">对于每一个逆元i^{-1},我们令k=\lfloor \frac {p}{i} \rfloor,j=p\pmod i,有p=k*i+j\\在有限域p的作用下也就是k*i+j\equiv 0 \pmod p，两边同时乘于i^{-1}*j^{-1}:\\于是有k*j^{-1}+i^{-1}\equiv 0 \pmod p\\i^{-1}\equiv -k *j^{-1}\pmod p\\i^{-1}\equiv -\lfloor \frac{p}{i}\rfloor  {(p \pmod i)}^{-1}\pmod p\\</script><h4><span id="代码实现">代码实现</span></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">inv[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">  inv[i] = (<span class="type">long</span> <span class="type">long</span>)(p - p / i) * inv[p % i] % p;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3><span id="情况2">情况2</span></h3><p>如果让你求a[1]-a[n]的逆元呢？</p><h4><span id="分析">分析</span></h4><script type="math/tex; mode=display">我们用s[N]记录前缀积，s[i]=i!,用单个求逆元的方法求出s[N]关于p的逆元\\，用sv[N]记录然后递推sv[i-1]=sv[i]*a[i] \pmod p得到每个s[i]\\关于p的逆元sv[i],且 sv[i]*s[i]=1\pmod p;\\sv[i]*s[i-1]=a[i]^{-1} \pmod p;\\a[i]^{-1}=sv[i]*s[i-1]\pmod p;</script><h4><span id="代码实现">代码实现</span></h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">s[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    s[i]=s[i<span class="number">-1</span>]*a[i]%p;</span><br><span class="line">sv[n]=<span class="built_in">invert</span>(s[i],p);求单个逆元两种方法都可</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=n;i&gt;=<span class="number">1</span>;i--)</span><br><span class="line">    sv[i<span class="number">-1</span>]=sv[i]*a[i]%p;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    inv[i]=sv[i]*s[i<span class="number">-1</span>]%p;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;!-- toc --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#乘法逆元介绍&quot;&gt;乘法逆元介绍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#求逆元的方法&quot;&gt;求逆元的方法&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#1-费马小定理快速幂&quot;&gt;1 费马小定理+快速幂&lt;/a&gt;&lt;ul&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="acm" scheme="http://zzuzyj.github.io/categories/acm/"/>
+    
+    
+    <category term="数学" scheme="http://zzuzyj.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>st表模板</title>

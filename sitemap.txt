@@ -1,3 +1,4 @@
+http://zzuzyj.github.io/2022/05/03/%E4%B9%98%E6%B3%95%E9%80%86%E5%85%83/
 http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/
 http://zzuzyj.github.io/2022/05/03/numpylearn/
 http://zzuzyj.github.io/2022/05/03/ctfshow_php%E7%89%B9%E6%80%A7/
@@ -34,6 +35,7 @@ http://zzuzyj.github.io/tags/%E7%88%86%E7%A0%B4/
 http://zzuzyj.github.io/tags/numpy/
 http://zzuzyj.github.io/tags/st%E8%A1%A8/
 http://zzuzyj.github.io/tags/%E5%80%8D%E5%A2%9E/
+http://zzuzyj.github.io/tags/%E6%95%B0%E5%AD%A6/
 http://zzuzyj.github.io/categories/acm/
 http://zzuzyj.github.io/categories/Crypto/
 http://zzuzyj.github.io/categories/web/

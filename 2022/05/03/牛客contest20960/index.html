@@ -17,38 +17,24 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>ctfshow文件上传 | Hexo</title>
-  <meta name="description" content="web151提示说前端验证不可靠，说明这一题后端没有做验证处理，直接改前端绕过即可。  用蚁剑连接上找到flag  web152先如上题一样，发现  上传失败，说明后端进行了简单的验证 抓包看一下 直接改后缀名  不行，unicode解码发现返回文件类型不合，更改文件类型发现能访问但是没有解析执行shell ，将文件名改为php试一下  上传成功，蚁剑连接拿到flag  web153用上一题的走了">
+  <title>newcode contest 20960 | Hexo</title>
+  <meta name="description" content="字符串的展开 时间复杂度 机械翻译   字符串的展开纯纯大模拟 1234567891011121314151617181920212223242526#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;int main()&amp;#123;    char d,e,f,j,p;    int p1,p2,p3,i,k;    char a[105];">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ctfshow文件上传">
-<meta property="og:url" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/index.html">
+<meta property="og:title" content="newcode contest 20960">
+<meta property="og:url" content="http://zzuzyj.github.io/2022/05/03/%E7%89%9B%E5%AE%A2contest20960/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="web151提示说前端验证不可靠，说明这一题后端没有做验证处理，直接改前端绕过即可。  用蚁剑连接上找到flag  web152先如上题一样，发现  上传失败，说明后端进行了简单的验证 抓包看一下 直接改后缀名  不行，unicode解码发现返回文件类型不合，更改文件类型发现能访问但是没有解析执行shell ，将文件名改为php试一下  上传成功，蚁剑连接拿到flag  web153用上一题的走了">
+<meta property="og:description" content="字符串的展开 时间复杂度 机械翻译   字符串的展开纯纯大模拟 1234567891011121314151617181920212223242526#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;int main()&amp;#123;    char d,e,f,j,p;    int p1,p2,p3,i,k;    char a[105];">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651302222597.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651302458310.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651302831942.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651303206167.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651303858907.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651304014493.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651304783681.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651305223169.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651305634263.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651305678880.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651306064666.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651306338734.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651306666449.png">
-<meta property="og:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651306889385.png">
-<meta property="article:published_time" content="2022-05-03T09:23:29.885Z">
-<meta property="article:modified_time" content="2022-04-30T08:29:06.000Z">
+<meta property="article:published_time" content="2022-05-03T12:55:28.175Z">
+<meta property="article:modified_time" content="2022-05-04T02:13:59.534Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="web">
-<meta property="article:tag" content="ctfshow">
-<meta property="article:tag" content="文件上传">
+<meta property="article:tag" content="newcode">
+<meta property="article:tag" content="模拟">
+<meta property="article:tag" content="枚举">
+<meta property="article:tag" content="贪心">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651302222597.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/index.html">
+  <link rel="canonical" href="http://zzuzyj.github.io/2022/05/03/%E7%89%9B%E5%AE%A2contest20960/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -361,14 +347,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-ctfshow文件上传" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-牛客contest20960" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      ctfshow文件上传
+      newcode contest 20960
     </h1>
   
 
@@ -376,20 +362,20 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" class="article-date">
-	  <time datetime="2022-05-03T09:23:29.885Z" itemprop="datePublished">2022-05-03</time>
+	<a href="/2022/05/03/%E7%89%9B%E5%AE%A2contest20960/" class="article-date">
+	  <time datetime="2022-05-03T12:55:28.175Z" itemprop="datePublished">2022-05-03</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/web/">web</a>
+    <a class="article-category-link" href="/categories/acm/">acm</a>
   </span>
 
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/ctfshow/" rel="tag">ctfshow</a>, <a class="article-tag-link-link" href="/tags/web/" rel="tag">web</a>, <a class="article-tag-link-link" href="/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" rel="tag">文件上传</a>
+	<a class="article-tag-link-link" href="/tags/newcode/" rel="tag">newcode</a>, <a class="article-tag-link-link" href="/tags/%E6%9E%9A%E4%B8%BE/" rel="tag">枚举</a>, <a class="article-tag-link-link" href="/tags/%E6%A8%A1%E6%8B%9F/" rel="tag">模拟</a>, <a class="article-tag-link-link" href="/tags/%E8%B4%AA%E5%BF%83/" rel="tag">贪心</a>
   </span>
 
 
@@ -402,10 +388,10 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/05/03/%E7%89%9B%E5%AE%A2contest20960/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 403(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 599(字)</span>
 	
 	
 
@@ -413,52 +399,19 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1><span id="web151">web151</span></h1><p>提示说前端验证不可靠，说明这一题后端没有做验证处理，直接改前端绕过即可。</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651302222597.png" alt="1651302222597"></p>
-<p>用蚁剑连接上找到flag</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651302458310.png" alt="1651302458310"></p>
-<h1><span id="web152">web152</span></h1><p>先如上题一样，发现</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651302831942.png" alt="1651302831942"></p>
-<p>上传失败，说明后端进行了简单的验证</p>
-<p>抓包看一下</p>
-<p>直接改后缀名</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651303206167.png" alt="1651303206167"></p>
-<p>不行，unicode解码发现返回文件类型不合，更改文件类型发现能访问但是没有解析执行shell</p>
-<p>，将文件名改为php试一下</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651303858907.png" alt="1651303858907"></p>
-<p>上传成功，蚁剑连接拿到flag</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651304014493.png" alt="1651304014493"></p>
-<h1><span id="web153">web153</span></h1><p>用上一题的走了一遍，发现不行了，八成是后端对文件内容或者是文件后缀进行了检验，直接上传一张图片</p>
-<p>，抓包更改参数</p>
-<p>先尝试是否过滤后缀名</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651304783681.png" alt="1651304783681"></p>
-<p>返回错误，过滤了</p>
-<p>此路不通。上传.user.ini文件试试</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651305223169.png" alt="1651305223169"></p>
-<p>上传成功</p>
-<p>继续上传1.txt</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651305634263.png" alt="1651305634263"></p>
-<p>蚁剑连接，拿到flag</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651305678880.png" alt="1651305678880"></p>
-<h1><span id="web154">web154</span></h1><p>直接传一手.user.ini成功</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651306064666.png" alt="1651306064666"></p>
-<p>但是上传txt文件发现抱错文件内容不合</p>
-<p>我们更改二进制文件头</p>
-<p>返回仍旧错误</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651306338734.png" alt="1651306338734"></p>
-<p>把一句话木马删除，成功了，说明检测到了一句话木马不让过</p>
-<p>更改木马语句为</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<p>还是不行，把php大写，过了，说明检测了php的存在，将语句改为短标签写法</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?=</span><span class="keyword">eval</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;attack&#x27;</span>]);<span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<p>上传成功了</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651306666449.png" alt="1651306666449"></p>
-<p>蚁剑连接拿到flag</p>
-<p><img src="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/1651306889385.png" alt="1651306889385"></p>
-<h1><span id="文件上传总结">文件上传总结</span></h1><p><strong>1</strong>  前端绕过</p>
-<p><strong>2</strong> 抓包绕过文件类型</p>
-<p><strong>3</strong> .user.ini  实现php解析</p>
-<p><strong>4</strong> 语句过滤php可以改为短标签写法</p>
+        <!-- toc -->
+<ul>
+<li><a href="#字符串的展开">字符串的展开</a></li>
+<li><a href="#时间复杂度">时间复杂度</a></li>
+<li><a href="#机械翻译">机械翻译</a></li>
+</ul>
+<!-- tocstop -->
+<h2><span id="字符串的展开">字符串的展开</span></h2><p>纯纯大模拟</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">char</span> d,e,f,j,p;</span><br><span class="line">    <span class="type">int</span> p1,p2,p3,i,k;</span><br><span class="line">    <span class="type">char</span> a[<span class="number">105</span>];</span><br><span class="line">    cin&gt;&gt;p1&gt;&gt;p2&gt;&gt;p3;</span><br><span class="line">    cin&gt;&gt;a;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;a[i];++i)<span class="comment">//当a[i]=&#x27;\0&#x27;时停止，</span></span><br><span class="line">    &#123;</span><br><span class="line">        d=a[i<span class="number">-1</span>],e=a[i+<span class="number">1</span>],f=a[i];<span class="comment">//记录以便于操作</span></span><br><span class="line">        <span class="keyword">if</span>(d&lt;e&amp;&amp;f==<span class="string">&#x27;-&#x27;</span>&amp;&amp;((d&gt;=<span class="string">&#x27;a&#x27;</span>&amp;&amp;e&lt;=<span class="string">&#x27;z&#x27;</span>)||(d&gt;=<span class="string">&#x27;0&#x27;</span>&amp;&amp;e&lt;=<span class="string">&#x27;9&#x27;</span>)))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(p3==<span class="number">1</span>?j=d+<span class="number">1</span>:j=e<span class="number">-1</span>;p3==<span class="number">1</span>?j&lt;e:j&gt;d;p3==<span class="number">1</span>?++j:--j)<span class="comment">//简单三目运算，判断从后往前还是从前往后</span></span><br><span class="line">            &#123;</span><br><span class="line">                p=j;</span><br><span class="line">                <span class="keyword">if</span>(p1==<span class="number">2</span>) p=p&gt;=<span class="string">&#x27;a&#x27;</span>?p<span class="number">-32</span>:p;<span class="comment">//判断是否要大写</span></span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(p1==<span class="number">3</span>) p=<span class="string">&#x27;*&#x27;</span>;</span><br><span class="line">                <span class="keyword">for</span>(k=<span class="number">0</span>;k&lt;p2;k++) <span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,p);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,f);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2><span id="时间复杂度">时间复杂度</span></h2><p>大模拟，真烦人</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> T,s[<span class="number">1005</span>],n,m,t,now,ans,f,vis[<span class="number">1005</span>],pos[<span class="number">1005</span>],wa;</span><br><span class="line"><span class="type">char</span> a[<span class="number">105</span>],b[<span class="number">105</span>],c[<span class="number">105</span>],d[<span class="number">105</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;T);</span><br><span class="line">	<span class="keyword">while</span>(T--)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d%s&quot;</span>,&amp;n,a);m=<span class="number">0</span>;ans=<span class="number">0</span>;now=<span class="number">0</span>;t=<span class="number">0</span>;wa=<span class="number">0</span>;f=<span class="number">0</span>;</span><br><span class="line">		<span class="built_in">memset</span>(vis,<span class="number">0</span>,<span class="built_in">sizeof</span>(vis));<span class="built_in">memset</span>(pos,<span class="number">0</span>,<span class="built_in">sizeof</span>(pos));</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">4</span>;i&lt;<span class="built_in">strlen</span>(a);++i)<span class="keyword">if</span>(a[i]&gt;=<span class="string">&#x27;0&#x27;</span>&amp;&amp;a[i]&lt;=<span class="string">&#x27;9&#x27;</span>)m=m*<span class="number">10</span>+a[i]<span class="number">-48</span>;</span><br><span class="line">		<span class="keyword">while</span>(n--)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,a);</span><br><span class="line">			<span class="keyword">if</span>(a[<span class="number">0</span>]==<span class="string">&#x27;F&#x27;</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,b);t++;</span><br><span class="line">				<span class="keyword">if</span>(!vis[b[<span class="number">0</span>]])vis[b[<span class="number">0</span>]]=<span class="number">1</span>,s[t]=b[<span class="number">0</span>];<span class="keyword">else</span> wa=<span class="number">1</span>;</span><br><span class="line">				<span class="built_in">scanf</span>(<span class="string">&quot;%s%s&quot;</span>,&amp;c,&amp;d);</span><br><span class="line">				<span class="keyword">if</span>(c[<span class="number">0</span>]!=<span class="string">&#x27;n&#x27;</span>&amp;&amp;d[<span class="number">0</span>]==<span class="string">&#x27;n&#x27;</span>&amp;&amp;!f)now++,pos[t]=<span class="number">1</span>;</span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span>((<span class="built_in">strlen</span>(c)&gt;<span class="built_in">strlen</span>(d)||(<span class="built_in">strlen</span>(c)==<span class="built_in">strlen</span>(d)&amp;&amp;<span class="built_in">strcmp</span>(c,d)&gt;<span class="number">0</span>)||(c[<span class="number">0</span>]==<span class="string">&#x27;n&#x27;</span>&amp;&amp;d[<span class="number">0</span>]!=<span class="string">&#x27;n&#x27;</span>))&amp;&amp;!f)f=t;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">			&#123;</span><br><span class="line">				ans=<span class="built_in">max</span>(ans,now);vis[s[t]]=<span class="number">0</span>;</span><br><span class="line">				<span class="keyword">if</span>(pos[t])now--,pos[t]=<span class="number">0</span>;</span><br><span class="line">				t--;</span><br><span class="line">				<span class="keyword">if</span>(f&gt;t)f=<span class="number">0</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(wa)<span class="built_in">puts</span>(<span class="string">&quot;ERR&quot;</span>);</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(t!=<span class="number">0</span>)<span class="built_in">puts</span>(<span class="string">&quot;ERR&quot;</span>);</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(ans==m)<span class="built_in">puts</span>(<span class="string">&quot;Yes&quot;</span>);</span><br><span class="line">		<span class="keyword">else</span> <span class="built_in">puts</span>(<span class="string">&quot;No&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2><span id="机械翻译">机械翻译</span></h2><p>用cnt记录结果，a记录数，vis记录存入与否，</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> a[<span class="number">1010</span>], vis[<span class="number">1010</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123; <span class="type">int</span> cnt=<span class="number">0</span>;</span><br><span class="line">  <span class="type">int</span> m,n,x;</span><br><span class="line">  cin&gt;&gt;m&gt;&gt;n;<span class="comment">//输入m,n</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">  &#123;</span><br><span class="line">  	     cin&gt;&gt;x; </span><br><span class="line">		<span class="keyword">if</span>(vis[x]==<span class="number">1</span>)<span class="keyword">continue</span>;</span><br><span class="line">		a[++cnt]=x;</span><br><span class="line">		vis[x]=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(cnt&gt;m)vis[a[cnt-m]]=<span class="number">0</span>;</span><br><span class="line">&#125; </span><br><span class="line">   cout&lt;&lt;cnt;</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;        </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -468,7 +421,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://zzuzyj.github.io/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" title="ctfshow文件上传" target="_blank" rel="external">http://zzuzyj.github.io/2022/05/03/ctfshow文件上传/</a>
+      <a href="http://zzuzyj.github.io/2022/05/03/%E7%89%9B%E5%AE%A2contest20960/" title="newcode contest 20960" target="_blank" rel="external">http://zzuzyj.github.io/2022/05/03/牛客contest20960/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -514,13 +467,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2022/05/03/ctfshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="ctfshow文件包含"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2022/05/03/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C1/" title="ctfshow命令执行1"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2022/05/03/%E4%B9%98%E6%B3%95%E9%80%86%E5%85%83/" title="乘法逆元"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

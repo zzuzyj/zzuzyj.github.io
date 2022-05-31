@@ -397,9 +397,9 @@
     
     <category term="web" scheme="http://zzuzyj.github.io/tags/web/"/>
     
-    <category term="java安全" scheme="http://zzuzyj.github.io/tags/java%E5%AE%89%E5%85%A8/"/>
-    
     <category term="ctfshow" scheme="http://zzuzyj.github.io/tags/ctfshow/"/>
+    
+    <category term="java安全" scheme="http://zzuzyj.github.io/tags/java%E5%AE%89%E5%85%A8/"/>
     
   </entry>
   

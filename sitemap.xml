@@ -146,25 +146,16 @@
   </url>
   
   <url>
-    <loc>http://zzuzyj.github.io/404.html</loc>
-    
-    <lastmod>2022-04-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://zzuzyj.github.io/about/index.html</loc>
-    
-    <lastmod>2022-04-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://zzuzyj.github.io/books/index.html</loc>
+    
+    <lastmod>2022-04-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://zzuzyj.github.io/404.html</loc>
     
     <lastmod>2022-04-18</lastmod>
     
@@ -183,6 +174,15 @@
   
   <url>
     <loc>http://zzuzyj.github.io/links/index.html</loc>
+    
+    <lastmod>2022-04-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://zzuzyj.github.io/about/index.html</loc>
     
     <lastmod>2022-04-18</lastmod>
     
@@ -239,14 +239,14 @@
   </url>
   
   <url>
-    <loc>http://zzuzyj.github.io/tags/ctfshow/</loc>
+    <loc>http://zzuzyj.github.io/tags/java%E5%AE%89%E5%85%A8/</loc>
     <lastmod>2022-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://zzuzyj.github.io/tags/sql%E6%B3%A8%E5%85%A5/</loc>
+    <loc>http://zzuzyj.github.io/tags/ctfshow/</loc>
     <lastmod>2022-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -260,7 +260,7 @@
   </url>
   
   <url>
-    <loc>http://zzuzyj.github.io/tags/java%E5%AE%89%E5%85%A8/</loc>
+    <loc>http://zzuzyj.github.io/tags/sql%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2022-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -316,6 +316,13 @@
   </url>
   
   <url>
+    <loc>http://zzuzyj.github.io/tags/%E6%95%B0%E5%AD%A6/</loc>
+    <lastmod>2022-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://zzuzyj.github.io/tags/newcode/</loc>
     <lastmod>2022-05-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -338,13 +345,6 @@
   
   <url>
     <loc>http://zzuzyj.github.io/tags/%E8%B4%AA%E5%BF%83/</loc>
-    <lastmod>2022-05-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://zzuzyj.github.io/tags/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2022-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
